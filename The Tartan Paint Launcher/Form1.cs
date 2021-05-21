@@ -17,5 +17,9 @@ namespace The_Tartan_Paint_Launcher
             InitializeComponent();
         }
 
+        private void setupbutton_Click(object sender, EventArgs e)
+        {
+            Setup.FirstTimeSetup();
+        }
     }
 }
