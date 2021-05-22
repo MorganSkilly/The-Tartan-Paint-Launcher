@@ -31,6 +31,7 @@ namespace The_Tartan_Paint_Launcher
         {
             this.setupbutton = new System.Windows.Forms.Button();
             this.removekeys = new System.Windows.Forms.Button();
+            this.consoleOut = new System.Windows.Forms.RichTextBox();
             this.SuspendLayout();
             // 
             // setupbutton
@@ -52,11 +53,20 @@ namespace The_Tartan_Paint_Launcher
             this.removekeys.Text = "remove";
             this.removekeys.UseVisualStyleBackColor = true;
             // 
+            // consoleOut
+            // 
+            this.consoleOut.Location = new System.Drawing.Point(437, 10);
+            this.consoleOut.Name = "consoleOut";
+            this.consoleOut.Size = new System.Drawing.Size(351, 160);
+            this.consoleOut.TabIndex = 0;
+            this.consoleOut.Text = "";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.consoleOut);
             this.Controls.Add(this.removekeys);
             this.Controls.Add(this.setupbutton);
             this.Name = "Form1";
@@ -69,6 +79,7 @@ namespace The_Tartan_Paint_Launcher
 
         private System.Windows.Forms.Button setupbutton;
         private System.Windows.Forms.Button removekeys;
+        private System.Windows.Forms.RichTextBox consoleOut;
     }
 }
 
